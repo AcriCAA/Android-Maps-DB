@@ -100,7 +100,7 @@ public class MapsDBReceiver extends BroadcastReceiver {
 						try {
 						latitude=addr.get(0).getLatitude();
 						longitude=addr.get(0).getLongitude();
-						requesturl="https://maps.googleapis.com/maps/api/place/search/json?radius=500&sensor=false&key=AIzaSyDFFgArel0ea8I_eJcz47l83D3C2_WoFnI";
+						requesturl="https://maps.googleapis.com/maps/api/place/search/json?radius=500&sensor=false&key=<your KEY here>";
 						requesturl+="&location="+new Double(latitude).toString()+","+new Double(longitude).toString();
 						if(type!=null)
 							requesturl+="&type="+type;
